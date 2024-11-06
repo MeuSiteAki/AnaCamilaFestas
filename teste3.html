@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Camila Festas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ff87f9;
+    }
+
+    header {
+        background: linear-gradient(#ffd2e5, #ff7eb3, #ff0066);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .topo {
+        font-family: Verdana;
+        color: rgb(255, 0, 119);
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .whatsapp-button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #25D366;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .galeria img {
+        width: 300px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #333;
+        color: white;
+    }
+    img {
+        animation: fadeIn 2s ease-in-out;
+        border-radius: 20px;
+    }
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    }
+    
+</style>
+<!--popup-->
+<style>
+    .imagem {
+        width: 100px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+    }
+    .popup img {
+        max-width: 60%;
+        max-height: 90%;
+    }
+</style>
+<script>
+    function abrirPopup(src) {
+        document.getElementById('imagemPopup').src = src;
+        document.getElementById('popup').style.display = 'flex';
+    }
+
+    function fecharPopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
+<body>
+    <header>
+        <marquee class="topo" scrollamount="8" direction="left"><i class="sec">ANA CAMILA DESIGNER DE FESTAS</i>
+        </marquee> <img style="width: 300px; border-radius: 20px;" src="fundo.png" alt=""> </h1>
+    </header>
+    <main>
+        <section id="eventos">
+            <h2 style="text-align: center;">Eventos Realizados:</h2>
+            <div class="galeria">
+                <img src="foto1.jpg" alt="Evento 1" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+                <img src="foto2.jpg" alt="Evento 2" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+                <img src="fotoc1.jpg" alt="Evento 3" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+                <img src="fotoc2.jpg" alt="Evento 4" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+            </div>
+        </section>
+        <section id="eventos">
+            <div class="galeria">
+                <img src="fotob1.jpg" alt="Evento 1" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+                <img src="fotob2.jpg" alt="Evento 2" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+                <img src="fotoe1.jpg" alt="Evento 3" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+                <img src="fotoe2.jpg" alt="Evento 4" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+            </div>
+        </section>
+        <section id="eventos">
+            <div class="galeria">
+                <img src="fotok1.jpg" alt="Evento 1" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+                <img src="fotok2.jpg" alt="Evento 2" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+                <img src="fotol1.jpg" alt="Evento 3" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+                <img src="fotol2.jpg" alt="Evento 4" class="imagem" onclick="abrirPopup(this.src)">
+                <div class="popup" id="popup" onclick="fecharPopup()">
+                    <img id="imagemPopup" src="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="com">
+        <style>
+            .comentario {
+                border: 1px solid #ccc;
+                padding: 10px;
+                margin-bottom: 10px;
+                background-color: white;
+            }
+            .botao-apagar {
+                background-color: red;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+            .com{text-align: center;}
+            input{border-radius: 5px;}
+            textarea{border-radius: 5px;}
+            button{font-size: 20px; border-radius: 7px; background-color: rgb(1, 179, 1); color: white;}
+            
+        </style>
+        <h1>Comentários de Clientes</h1>
+        <input type="text" id="nome" placeholder="Seu nome"><br><br>
+        <textarea id="comentario" placeholder="Seu comentário"></textarea><br><br>
+        <input type="text" id="instagram" placeholder="Link do Instagram"><br><br>
+        <button id="adicionar">Adicionar Comentário</button><br><br>
+        <div id="comentarios"></div>
+
+        <script>
+            const comentarios = JSON.parse(localStorage.getItem('comentarios')) || [];
+
+            function renderizarComentarios() {
+                const comentariosDiv = document.getElementById('comentarios');
+                comentariosDiv.innerHTML = '';
+                comentarios.forEach((comentario, index) => {
+                    const div = document.createElement('div');
+                    div.className = 'comentario';
+                    div.innerHTML = `
+                        <strong>${comentario.nome}</strong><br>
+                        ${comentario.texto}<br>
+                        <a href="${comentario.instagram}" target="_blank">${comentario.instagram}</a><br>
+                      
+    
+    
+                    `;
+                    comentariosDiv.appendChild(div);
+                });
+            }
+
+            function adicionarComentario() {
+                const nome = document.getElementById('nome').value;
+                const texto = document.getElementById('comentario').value;
+                const instagram = document.getElementById('instagram').value;
+
+                if (nome && texto) {
+                    comentarios.push({ nome, texto, instagram });
+                    localStorage.setItem('comentarios', JSON.stringify(comentarios));
+                    renderizarComentarios();
+                    document.getElementById('nome').value = '';
+                    document.getElementById('comentario').value = '';
+                    document.getElementById('instagram').value = '';
+                }
+            }
+
+            function apagarComentario(index) {
+                comentarios.splice(index, 1);
+                localStorage.setItem('comentarios', JSON.stringify(comentarios));
+                renderizarComentarios();
+            }
+
+            document.getElementById('adicionar').addEventListener('click', adicionarComentario);
+            renderizarComentarios();
+        </script>
+    </section>
+    <section>
+        <style>
+            .whatsapp-link {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 40px;
+        right: 15px;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        z-index: 1000;
+    }
+
+    .insta-link {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 100px;
+        right: 15px;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        z-index: 1000;
+    }
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #333;
+        color: #fff;
+    }
+    section{
+        background-color: #ffd0fd;
+        padding: 5px;
+        border-radius: 7px;
+    
+    }
+        </style>
+    </section>
+        <style>
+            iframe{width: 300px; height: 300px;}
+        </style>
+       <section>
+        <style>
+            iframe{width: 300px; height: 300px;}
+        </style>
+        <footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d994.4394319168485!2d-47.53193742253181!3d-4.456099260383943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1727224329358!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h5>Rua Buriti, 206b, Vila Emanuela, Itinga do Maranhão.</h5>
+            <p>&copy; 2024 Carlos Rocha Web Designer. Todos os direitos reservados.</p>
+        </footer>
+    </section>
+    <a class="whatsapp-link" href="https://wa.me/5599991999260" target="_blank"><img class="whatsapp-link"
+            src="whatsapp.png" alt=""></a>
+
+    <a class="insta-link" href="https://www.instagram.com/anacamiladesignerdefestas?igsh=YWVhYXN4bTZjNmxj&utm_source=qr" target="_blank"><img class="insta-link" src="instagram.png"
+            alt=""></a>
+</body>
+
+</html>
+
+<!--   <button class="botao-apagar" onclick="apagarComentario(${index})">Apagar</button> -->

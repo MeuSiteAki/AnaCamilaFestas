@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Camila Festas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ff87f9;
+    }
+
+    header {
+        background: linear-gradient(#ffd2e5, #ff7eb3, #ff0066);
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        background-color: white;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: Verdana;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    section {
+        padding: 20px;
+        margin: 10px;
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #333;
+        color: #fff;
+    }
+
+    img {
+        width: 320px;
+        animation: fadeIn 2s ease-in-out;
+        border-radius: 20px;
+    }
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+    h1 {
+        font-family: Verdana;
+        color: rgb(0, 0, 0);
+    }
+
+    .topo {
+        font-family: Verdana;
+        color: rgb(255, 0, 119);
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    #sobre {
+        text-align: center;
+        font-style: italic;
+    }
+
+    #servicos {
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #ff0080;
+    }
+    
+    #servicos h2 {
+        color: white;
+    }
+
+    #contato {
+        text-align: center;
+        background-color: #ff0080;
+        color: white;
+    }
+
+    .whatsapp-link {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 40px;
+        right: 15px;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        z-index: 1000;
+    }
+
+    .insta-link {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        bottom: 100px;
+        right: 15px;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        z-index: 1000;
+    }
+    h2{
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <header>
+        <marquee class="topo" scrollamount="8" direction="left"><i class="sec">ANA CAMILA DESIGNER DE FESTAS</i>
+        </marquee> <img style="width: 300px;" src="fundo.png" alt=""> </h1>
+        <nav>
+            <ul>
+                <u><li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a style="color: blue;" href="teste3.html">Galeria de Fotos</a></li></u>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2><u>QUEM SOMOS:</u></h2>
+        <img src="IMG_8677.PNG" alt="">
+        <img src="IMG_8678.PNG" alt=""><br>
+        <img src="IMG_8679.PNG" alt="">
+        <img src="IMG_8680.PNG" alt="">
+    </section>
+<section>
+    <style>
+        #frase {
+            display: none;
+            margin-top: 20px;
+            border: 7px solid #000000;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+        #botao {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family: Verdana;
+            font-weight: 600;
+        }
+        #frase{
+            font-family: Verdana;
+            font-weight: 600;
+        }
+    </style>
+    <button id="botao">VEJA AQUI MINHA BIOGRAFIA</button>
+    <div id="frase">
+        Desde 2021, venho transformando sonhos em festas inesquecíveis, atuando como designer de festas e assessora. Meu compromisso com a excelência me levou a buscar aprendizado com grandes nomes do setor, como Fabio Raian e Tabita Cintra, além de ter dois anos de mentoria intensa com Diva Lopes, onde refinei cada detalhe do meu trabalho.
+        <br><br>
+        Também tenho formação especializada com Dany Uchôa. Pacheco Balões, onde aprendi técnicas de balões orgânicos que trazem movimento e leveza às decorações. Completando minha expertise, passei pela formação profissional de decoradores com a Georgia Bianka, reconhecida pelo MEC, garantindo a qualidade e o cuidado em cada evento que realizo.
+        <br><br>
+        Minha missão é criar eventos que reflitam a essência de cada cliente, oferecendo um serviço completo, criativo e impecável. Vamos juntos planejar o seu evento dos sonhos?
+    </div>
+
+    <script>
+        const botao = document.getElementById('botao');
+        const frase = document.getElementById('frase');
+
+        botao.addEventListener('click', () => {
+            frase.style.display = frase.style.display === 'none' ? 'block' : 'none';
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!botao.contains(event.target) && !frase.contains(event.target)) {
+                frase.style.display = 'none';
+            }
+        });
+    </script>
+</section>
+ 
+    <section  id="servicos" style="text-align: center;">
+       
+        <style>
+
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(182, 63, 132);
+            border: 4px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            border-radius: 10px;
+            color: white;
+            font-family: Verdana;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .fall {
+            animation: fall 1s forwards;
+        }
+        @keyframes fall {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        </style>
+        <h2><u><i>SERVIÇOS:</i></u></h2>
+        <h5>Click em cada serviço e veja uma frase pra você.</h5>
+<h1 id="aniversario" style="cursor:pointer; font-size:32px;
+color: #fff;
+text-shadow: 
+    1px 1px 0 #000,  
+    2px 2px 0 #000,  
+    3px 3px 0 #000;  ">Aniversários</h1>
+<h1 id="casamento" style="cursor:pointer;font-size:32px;
+color: #fff;
+text-shadow: 
+    1px 1px 0 #000,  
+    2px 2px 0 #000,  
+    3px 3px 0 #000;  ">Casamentos</h1>
+<h1 id="Corporativos" style="cursor:pointer;font-size:32px;
+color: #fff;
+text-shadow: 
+    1px 1px 0 #000,  
+    2px 2px 0 #000,  
+    3px 3px 0 #000;  ">Corporativos</h1>
+<h1 id="Chás e Batizados" style="cursor:pointer;font-size:32px;
+color: #fff;
+text-shadow: 
+    1px 1px 0 #000,  
+    2px 2px 0 #000,  
+    3px 3px 0 #000;  ">Chás e Batizados</h1>
+
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="popup"></div>
+
+<script>
+    const popup = document.getElementById('popup');
+    const overlay = document.getElementById('overlay');
+
+    document.getElementById('aniversario').onclick = function() {
+        popup.innerHTML = "Feliz Aniversário! Que seu dia seja repleto de alegrias!";
+        showPopup();
+    };
+
+    document.getElementById('casamento').onclick = function() {
+        popup.innerHTML = "Parabéns pelo Casamento! Que o amor de vocês seja eterno!";
+        showPopup();
+    };
+
+    document.getElementById('Corporativos').onclick = function() {
+        popup.innerHTML = "Companheirismo é a base fundamental da verdadeira conquista.";
+        showPopup();
+    };
+
+    document.getElementById('Chás e Batizados').onclick = function() {
+        popup.innerHTML = "Deus abre as portas da sua casa no dia do seu divino batismo. Que o Senhor abençoe sua vida.";
+        showPopup();
+    };
+    
+    function showPopup() {
+        popup.classList.add('fall');
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
+        setTimeout(() => {
+            popup.classList.remove('fall');
+        }, 1000);
+    }
+
+    overlay.onclick = function() {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+    };
+</script>
+
+    </section>
+    <section>
+        <style>
+            .form-container {
+                background: white;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            input, select, textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            button {
+                background-color: #28a745;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #218838;
+            }
+        </style>
+
+        <div class="form-container">
+            <h2>Formulário de Contato:</h2>
+            <form id="contactForm">
+                <input type="text" id="nome" placeholder="Nome" >
+                <input type="email" id="email" placeholder="Email" >
+                <input type="tel" id="telefone" placeholder="Telefone" >
+                <input type="text" id="assunto" placeholder="Assunto" >
+                <select id="tipoEvento" >
+                    <option value="">Tipo de Evento</option>
+                    <option value="Casamento">Casamento</option>
+                    <option value="Aniversario">Aniversário</option>
+                    <option value="Corporativo">Corporativo</option>
+                  
+                    <option value="Chás e Batizados">Chás e Batizados</option>
+                   
+                </select>
+                <input type="text" id="espacoEvento" placeholder="Espaço do Evento" >
+                <textarea id="comentarios" placeholder="Fale um pouco sobre sua festa:" rows="4"></textarea>
+                <button type="submit">Enviar para WhatsApp</button>
+            </form>
+        </div>
+        
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const nome = document.getElementById('nome').value;
+                const email = document.getElementById('email').value;
+                const telefone = document.getElementById('telefone').value;
+                const assunto = document.getElementById('assunto').value;
+                const tipoEvento = document.getElementById('tipoEvento').value;
+                const espacoEvento = document.getElementById('espacoEvento').value;
+                const comentarios = document.getElementById('comentarios').value;
+        
+                const mensagem = `Nome: ${nome}\nEmail: ${email}\nTelefone: ${telefone}\nAssunto: ${assunto}\nTipo de Evento: ${tipoEvento}\nEspaço do Evento: ${espacoEvento}
+                \nComentários: ${comentarios}`;
+                const whatsappUrl = `https://api.whatsapp.com/send?phone=5599992247544&text=${encodeURIComponent(mensagem)}`;
+                
+                window.open(whatsappUrl, '_blank');
+            });
+        </script>
+    </section>
+
+    <section id="contato">
+        <h2>Contatos:</h2>
+        <p>Email: anacamilacarvalho7@gmail.com</p>
+        <a style="font-weight: 700; color: rgb(1, 90, 1); font-size: 20px;" href="https://wa.me/5599991999260"
+            target="_blank">Nosso WhatsApp</a>
+    </section>
+
+    <section>
+        <style>
+            iframe{width: 300px; height: 300px;}
+        </style>
+        <footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d994.4394319168485!2d-47.53193742253181!3d-4.456099260383943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1727224329358!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h5>Rua Buriti, 206b, Vila Emanuela, Itinga do Maranhão.</h5>
+            <p>&copy; 2024 Carlos Rocha Web Designer. Todos os direitos reservados.</p>
+        </footer>
+    </section>
+    <a class="whatsapp-link" href="https://wa.me/5599991999260" target="_blank"><img class="whatsapp-link"
+            src="whatsapp.png" alt=""></a>
+
+    <a class="insta-link" href="https://www.instagram.com/anacamiladesignerdefestas?igsh=YWVhYXN4bTZjNmxj&utm_source=qr" target="_blank"><img class="insta-link" src="instagram.png"
+            alt=""></a>
+</body>
+</html>
+
+
+
+<!-- @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} -->

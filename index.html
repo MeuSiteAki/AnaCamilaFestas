@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Camila Festas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        height: 90vh;
+        font-family: Verdana;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: rgb(255, 255, 255);
+    }
+    .container {
+        text-align: center;
+        padding: 50px 0px;
+        background: linear-gradient(#ffd2e5, #ff7eb3, #ff0066);
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 28px;
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 700;
+    }
+
+    img {
+        clip-path: circle(50% at 50% 50%);
+        width: 350px;
+    }
+
+    .imagem {
+        width: 400px;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 5s ease, transform 3s ease;
+    }
+
+    .imagem.surgir {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgb(0, 0, 0);
+    }
+
+    h3 {
+        font-family: Verdana;
+    }
+</style>
+<body>
+    <div class="container">
+        <img src="IMG_8683.PNG" alt="Imagem" class="imagem" id="imagem">
+        <script>
+            window.onload = function () {
+                const imagem = document.getElementById('imagem');
+                imagem.classList.add('surgir');
+            };
+        </script><br><br>
+        <h1>Bem-vindo à Minha Página</h1>
+        <h2>Assessoria e Decoração</h2>
+        <p>Se podemos sonhar, podemos realizar!.</p>
+        <a href="teste2.html" class="btn"><u>ENTRE AQUI</u></a>
+    </div>
+    <footer>
+        <h3>Rua Buriti, 206b, Vila Emanuela, Itinga do Maranhão.</h3>
+        <a style="font-family: Verdana; color: black; font-weight: 600;"  href="https://wa.me/5599992247544" target="_blank"><i><u>Site criado por: Carlos de Freitas Rocha. <br>Click aqui e faça seu orçamento.</u></a></i>
+    </footer>
+</body>
+
+</html>
